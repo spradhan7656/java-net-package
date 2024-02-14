@@ -13,9 +13,7 @@ public class FindIP
 		{
 			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter the Domain Name");
-			
 			String s=sc.nextLine();
-			
 			InetAddress ip=InetAddress.getByName(s);
 			System.out.println("The Host are "+ip.getHostName());
 			System.out.println("The IP Address are "+ip.getHostAddress());

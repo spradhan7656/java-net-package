@@ -16,7 +16,7 @@ public class ServerUDP
 		ds.receive(dp);
 		String str=new String (dp.getData());
 		System.out.println("Received:"+str);
-		
+		Thread.sleep(2000);
 		//send
 		String msg="Hey i am server";
 		byte b1[]=msg.getBytes();
